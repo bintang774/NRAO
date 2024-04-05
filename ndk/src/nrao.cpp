@@ -136,7 +136,7 @@ void cmd_services_tweak() {
 // Tweak to improve main DEX files.
 void main_dex_tweak() {
   // Build command to execute.
-  string cmd = "cmd package compile -m speed-profile -a";
+  string cmd = "cmd package compile -m everything -a";
 
   // Use exec_shell() function to execute shell command.
   exec_shell(cmd, false);   
@@ -149,7 +149,7 @@ void main_dex_tweak() {
 void secondary_dex_tweak() {
   // List of shell commands to execute.
   vector<string> cmds = {
-    "for i in $(pm list packages | cut -d: -f2); do pm compile -m speed-profile --secondary-dex $i; done", 
+    "for i in $(pm list packages | cut -d: -f2); do pm compile -m everything --secondary-dex $i; done", 
     "pm reconcile-secondary-dex-files -a", 
     "pm compile --compile-layouts -a"
   };
