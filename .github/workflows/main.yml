@@ -17,7 +17,7 @@ jobs:
 
       - uses: nttld/setup-ndk@v1
         with:
-          ndk-version: r25c
+          ndk-version: r26c
 
       - name: Compile
         run: |
