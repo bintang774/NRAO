@@ -20,7 +20,6 @@ setup_binaries() {
       exit 1
     } 
     chmod 0755 '/data/local/tmp/nrao'
-    chmod 0755 '/data/local/tmp/vmtouch'
   } || {
     echo "[Error] Binaries not found. Exiting."
     exit 1
