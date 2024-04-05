@@ -12,9 +12,8 @@ jobs:
 
       - name: Install dependencies
         run: |
-          wget -O './ndk/src/util_functions.hpp' 'https://raw.githubusercontent.com/iamlooper/cpp-utils/main/util_functions.hpp'
-          wget -O './ndk/src/vmtouch.cpp' 'https://raw.githubusercontent.com/iamlooper/cpp-utils/main/vmtouch.cpp'
-
+          wget -O './ndk/src/util_functions.hpp' 'https://raw.githubusercontent.com/iamlooper/Utils/cpp-utils/util_functions.hpp
+          
       - uses: nttld/setup-ndk@v1
         with:
           ndk-version: r26c
